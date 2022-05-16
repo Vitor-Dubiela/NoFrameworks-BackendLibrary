@@ -3,5 +3,5 @@
 <p>
     <h2>Overview</h2>
     </br>
-    &emsp The initial idea of this project, by creating a server starting from scratch, it's to understand how a server works.
+    &nbsp The initial idea of this project, by creating a server starting from scratch, it's to understand how a server works.
 </p>
