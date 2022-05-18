@@ -2,13 +2,11 @@ const http = require('http');
 const url = require('url');
 const fs = require('fs');
 const path = require('path');
-
+const movies = require('./data/movies');
 
 const server = http.createServer((req, res) => {
-    res.statusCode = 200;
-    res.setHeader('Content-Type', 'text/html');
-    res.write("<h1>Hello World</h1>");
-    res.end();
+    res.writeHead(200, {"Content-Type": "application/json"});
+    res.end(JSON.stringify(movies));
 });
 
 server.listen(5000, () => {

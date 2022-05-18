@@ -1,0 +1,14 @@
+[
+    {
+        "Name": "Harry Potter",
+        "Year": 2001,
+        "Duration": 120,
+        "Genre": ["Fantasy", "Action"]
+    },
+    {
+        "Name": "Matrix",
+        "Year": 1998,
+        "Duration": 140,
+        "Genre": ["Sci-Fi", "Action"]
+    }
+]
