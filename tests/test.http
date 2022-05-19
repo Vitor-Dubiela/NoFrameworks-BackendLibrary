@@ -1,0 +1,7 @@
+### GET 405 Error Test - Using wrong method to make the Request
+POST http://localhost:5000/
+Content-Type: "text/html"
+
+{
+    "Object": "NewObject"
+}

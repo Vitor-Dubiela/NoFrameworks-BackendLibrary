@@ -2,11 +2,16 @@ const http = require('http');
 const url = require('url');
 const fs = require('fs');
 const path = require('path');
+
 const movies = require('./data/movies');
+const Router = require('./router.js');
+
+let router = new Router();
 
 const server = http.createServer((req, res) => {
-    res.writeHead(200, {"Content-Type": "application/json"});
-    res.end(JSON.stringify(movies));
+    router.get('/', movies);
+
+    router.run(req, res);
 });
 
 server.listen(5000, () => {
